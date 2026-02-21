@@ -6,6 +6,10 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/src" />
         <option name="gradleHome" value="" />
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/untitled" />
+        <option name="gradleHome" value="" />
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
