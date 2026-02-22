@@ -1,10 +1,8 @@
-[
-  {
-    "sequence": ["UP", "UP", "DOWN", "LEFT"],
-    "run": "/scripts/test.rs"
-  },
-  {
-    "sequence": ["LEFT", "RIGHT", "LEFT"],
-    "run": "/scripts/test.sh"
-  }
-]
+{
+  "sequences": [
+    {
+      "sequence": ["UP", "UP"],
+      "run": "/scripts/test.sh"
+    }
+  ]
+}

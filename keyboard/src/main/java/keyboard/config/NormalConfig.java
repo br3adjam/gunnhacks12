@@ -4,13 +4,13 @@ import java.util.Map;
 
 public class NormalConfig {
     public Map<String, String> keys = Map.of(
-            "UP", "UP_ARROW",
-            "DOWN", "DOWN_ARROW",
-            "LEFT", "LEFT_ARROW",
-            "RIGHT", "RIGHT_ARROW",
-            "MOD", "PAGE_UP",
-            "END", "PAGE_DOWN",
-            "TOGGLE", "RCTRL"
+                "UP", "UP",
+                "DOWN", "DOWN",
+                "LEFT", "LEFT",
+                "RIGHT", "RIGHT",
+                "MOD", "A",
+                "END", "B",
+                "TOGGLE", "CONTROL"
         );
     
     public int maxComboLength = 8;

@@ -1,12 +1,12 @@
 {
   "keys": {
-    "UP": "UP_ARROW",
-    "DOWN": "DOWN_ARROW",
-    "LEFT": "LEFT_ARROW",
-    "RIGHT": "RIGHT_ARROW",
-    "MODIFIER": "PAGE_UP",
-    "END": "PAGE_DOWN",
-    "TOGGLE": "RCTRL"
+    "UP": "UP",
+    "DOWN": "DOWN",
+    "LEFT": "LEFT",
+    "RIGHT": "RIGHT",
+    "MOD": "A",
+    "END": "B",
+    "TOGGLE": "CONTROL"
   },
   "enableToggle": true,
   "minimizeOnClose": true,

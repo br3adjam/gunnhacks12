@@ -1,6 +1,7 @@
 package keyboard;
 
 import com.github.kwhat.jnativehook.GlobalScreen;
+import keyboard.config.SequenceConfig;
 import keyboard.listener.GlobalKeyListener;
 import keyboard.logic.KeyboardLogic;
 import keyboard.config.ConfigLoader;
@@ -9,6 +10,7 @@ import java.util.logging.Logger;
 
 public class Keyboard {
     public static void main(String[] args) throws Exception {
+
         Logger logger = java.util.logging.Logger.getLogger(
                 GlobalScreen.class.getPackage().getName()
         );
@@ -20,12 +22,21 @@ public class Keyboard {
 
         ConfigLoader configLoader = new ConfigLoader();
         configLoader.loadConfigs();
+        System.out.println("Config loaded!");
 
-        KeyboardLogic logic = new KeyboardLogic(configLoader);
+        SequenceConfig config = configLoader.getSequenceConfig();
+        System.out.println("Config loaded: " + config);
+        System.out.println("Sequences: " + config.sequences);
+
+        KeyboardLogic logic = new KeyboardLogic(
+                configLoader.getNormalConfig(),
+                configLoader.getSequenceConfig()
+        );
+        System.out.println("KeyboardLogic created!");
 
         GlobalScreen.registerNativeHook();
         GlobalScreen.addNativeKeyListener(new GlobalKeyListener(logic));
+        System.out.println("Hook registered!");
 
-        System.out.println("hook registered!");
     }
 }

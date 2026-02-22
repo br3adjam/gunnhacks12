@@ -1,14 +1,10 @@
 package keyboard.logic;
 
 import com.github.kwhat.jnativehook.keyboard.NativeKeyEvent;
-import keyboard.config.ConfigLoader;
 import keyboard.config.NormalConfig;
 import keyboard.config.SequenceConfig;
-import org.gradle.internal.impldep.com.fasterxml.jackson.databind.ObjectMapper;
+import keyboard.util.ActionRunner;
 
-import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.ObjectInputFilter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,33 +20,48 @@ public class KeybindingManager {
 
     private final Map<String, Integer> keyCodes = new HashMap<>();
 
-    ObjectMapper mapper = new ObjectMapper(); // stackoverflow my beloved
-//    List<List<String>> arrayCollection = mapper.readValue(ConfigLoader, List.class); //rip doesnt work figure out
-    // todo)) find fast way to compare sequences from getSequenceConfig with comboBuffer (hashmaps lol)
+    private final Map<List<Integer>, String> sequenceMap = new HashMap<>();
 
-    ConfigLoader loader = new ConfigLoader();
-    SequenceConfig config = loader.getSequenceConfig();
-    List<SequenceConfig.SequenceEntry> seq = config.sequences;
-    List<String> seqs = (List<String>) seq.stream();
-
-    public KeybindingManager(NormalConfig config) {
-        keyCodes.put("MOD", keyFromString(config.keys.get("MOD")));
-        keyCodes.put("END", keyFromString(config.keys.get("END")));
-        keyCodes.put("TOGGLE", keyFromString(config.keys.get("TOGGLE")));
-        keyCodes.put("UP", keyFromString(config.keys.get("UP")));
-        keyCodes.put("DOWN", keyFromString(config.keys.get("DOWN")));
-        keyCodes.put("LEFT", keyFromString(config.keys.get("LEFT")));
-        keyCodes.put("RIGHT", keyFromString(config.keys.get("RIGHT")));
-
-        this.maxComboLength = config.maxComboLength;
-        this.playErrorSound = config.playErrorSound;
-        this.enableToggleKey = config.enableToggleKey;
+    public void registerSequence(List<String> seq, String output) {
+        List<Integer> key = seq.stream()
+                .map(this::keyFromString)
+                .toList();
+        sequenceMap.put(key, output);
     }
+
+//    ConfigLoader loader = new ConfigLoader();
+//    SequenceConfig config = loader.getSequenceConfig();
+
+    SequenceConfig config;
+
+    public KeybindingManager(NormalConfig normalConfig, SequenceConfig sequenceConfig) {
+        this.config = sequenceConfig;
+
+        keyCodes.put("MOD", keyFromString(normalConfig.keys.get("MOD")));
+        keyCodes.put("END", keyFromString(normalConfig.keys.get("END")));
+        keyCodes.put("TOGGLE", keyFromString(normalConfig.keys.get("TOGGLE")));
+        keyCodes.put("UP", keyFromString(normalConfig.keys.get("UP")));
+        keyCodes.put("DOWN", keyFromString(normalConfig.keys.get("DOWN")));
+        keyCodes.put("LEFT", keyFromString(normalConfig.keys.get("LEFT")));
+        keyCodes.put("RIGHT", keyFromString(normalConfig.keys.get("RIGHT")));
+
+        this.maxComboLength = normalConfig.maxComboLength;
+        this.playErrorSound = normalConfig.playErrorSound;
+        this.enableToggleKey = normalConfig.enableToggleKey;
+
+        if (sequenceConfig != null && sequenceConfig.sequences != null) {
+            for (SequenceConfig.SequenceEntry entry : sequenceConfig.sequences) {
+                registerSequence(entry.getSequence(), entry.getRun());
+            }
+        }
+    }
+
+//    List<SequenceConfig.SequenceEntry> seq = config.sequences;
 
     public void processKey(int keyCode) {
         if (keyCode == keyCodes.get("END")) {
             executeCombo();
-            comboBuffer.clear();
+            reset();
             return;
         }
 
@@ -74,17 +85,22 @@ public class KeybindingManager {
         }
     }
 
+    public String checkCombo() {
+        return sequenceMap.getOrDefault(comboBuffer, "INVALID");
+    }
+
     public void executeCombo() {
-
-        if (comboBuffer.getLast() == keyCodes.get("MOD")) { // mod end always clears buffer, make cleaner when coding the "matching" code as well
+        int size = comboBuffer.size();
+        if (size >= 2 && comboBuffer.get(size-1) == keyCodes.get("MOD") && comboBuffer.get(size-2) == keyCodes.get("MOD")) {
             comboBuffer.clear();
+            return;
         }
 
-        for (int keyCode : comboBuffer) {
-            String keyText = KeyEvent.getKeyText(keyCode);
+        if (checkCombo().equals("INVALID")) {
+            System.out.println("Invalid sequence!");
+        } else {
+            ActionRunner.run(checkCombo());
         }
-
-        // todo)) lol make logic based off buffer(ringbuffer might be funny to use) and sequences
     }
 
     public boolean isToggleKey(int keyCode) {
@@ -101,5 +117,9 @@ public class KeybindingManager {
                     "Invalid key: " + key
             );
         }
+    }
+
+    public SequenceConfig getConfig() {
+        return config;
     }
 }

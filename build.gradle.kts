@@ -16,10 +16,12 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.15.1")
 }
 
-application {
-    mainClass.set("keyboard.Keyboard")
-}
-
 tasks.test {
     useJUnitPlatform()
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
 }

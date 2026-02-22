@@ -5,28 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51d1d15b-334f-46d9-88e9-43c26985a57b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/Keyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/ConfigLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/NormalConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/SequenceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeybindingManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeyboardLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/SequenceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/util/ActionRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/resources/default-config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard/src/main/resources/default-sequences.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keyboard/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/gui.form" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/GlobalKeyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/listener/GlobalKeyListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/KeyboardLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.form" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/Keyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/ConfigLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/NormalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/NormalConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/SequenceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/SequenceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeybindingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeybindingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeyboardLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeyboardLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/resources/default-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/resources/default-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard/src/main/resources/default-sequences.json" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/resources/default-sequences.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,33 +48,33 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="keyboard" type="f1a62948:ProjectNode" />
+                <item name="gunnhacks12" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="keyboard" type="f1a62948:ProjectNode" />
+                <item name="gunnhacks12" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="keyboard" type="f1a62948:ProjectNode" />
+                <item name="gunnhacks12" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="keyboard" type="f1a62948:ProjectNode" />
+                <item name="gunnhacks12" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build setup" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="keyboard" type="f1a62948:ProjectNode" />
+                <item name="gunnhacks12" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="keyboard" type="f1a62948:ProjectNode" />
+                <item name="gunnhacks12" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -112,6 +107,9 @@
   }
 }</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.14-bin/38aieal9i53h9rfe7vjup95b9/gradle-8.14" javaHome="$USER_HOME$/.jdks/ms-21.0.9" gradleVersion="8.14" />
+  <component name="JvmLoggingSettingsStorage">
+    <option name="loggerId" value="Log4j" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -127,6 +125,8 @@
   &quot;keyToString&quot;: {
     &quot;Gradle./home/moth/IdeaProjects/gunnhacks12 [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gunnhacks12 [:gui.gui.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gunnhacks12 [:gui.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.gunnhacks12 [assemble].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.gunnhacks12 [buildDependents].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.gunnhacks12 [buildNeeded].executor&quot;: &quot;Run&quot;,
@@ -135,8 +135,11 @@
     &quot;Gradle.gunnhacks12 [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.gunnhacks12 [init].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.gunnhacks12 [wrapper].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.keyboard [:gui.MacroManager.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.keyboard [:gui.gui.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.keyboard [:gui.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.keyboard [:keyboard.GlobalKeyListener.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.keyboard [:keyboard.Keyboard.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.keyboard [:keyboard.Test.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.keyboard [:keyboard.keyboard.main()].executor&quot;: &quot;Run&quot;,
     &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
@@ -151,7 +154,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;jdk.preference.JDK&quot;: [
@@ -170,41 +173,28 @@
       <recent name="$PROJECT_DIR$/keyboard" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="keyboard.config" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.gunnhacks12 [build]">
-    <configuration name="gui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui" />
-      <module name="keyboard.main" />
+  <component name="RunManager" selected="Application.Keyboard">
+    <configuration name="Keyboard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="keyboard.Keyboard" />
+      <module name="org.example.src.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="keyboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="gunnhacks12 [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="gunnhacks12 [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -272,13 +262,53 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="gunnhacks12 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="src" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Keyboard" />
+      <item itemvalue="Gradle.gunnhacks12 [clean]" />
+      <item itemvalue="Gradle.gunnhacks12 [build]" />
+      <item itemvalue="Gradle.gunnhacks12 [buildDependents]" />
+      <item itemvalue="Gradle.gunnhacks12 [buildNeeded]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.gunnhacks12 [build]" />
-        <item itemvalue="Gradle.gunnhacks12 [buildNeeded]" />
-        <item itemvalue="Gradle.gunnhacks12 [build]" />
-        <item itemvalue="Gradle.gunnhacks12 [buildNeeded]" />
         <item itemvalue="Gradle.gunnhacks12 [buildDependents]" />
+        <item itemvalue="Gradle.gunnhacks12 [clean]" />
+        <item itemvalue="Gradle.gunnhacks12 [buildNeeded]" />
+        <item itemvalue="Application.Keyboard" />
       </list>
     </recent_temporary>
   </component>
@@ -291,6 +321,26 @@
       <updated>1771716061604</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeybindingManager.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="keyboard.config.SequenceConfig" memberName="sequences" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

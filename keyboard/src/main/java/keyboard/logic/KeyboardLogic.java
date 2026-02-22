@@ -1,15 +1,17 @@
 package keyboard.logic;
 
 import keyboard.config.ConfigLoader;
+import keyboard.config.NormalConfig;
+import keyboard.config.SequenceConfig;
 
 public class KeyboardLogic {
     private final SequenceManager sequenceManager;
     private final KeybindingManager keybindingManager;
     private boolean sequenceMode = false;
 
-    public KeyboardLogic(ConfigLoader configLoader) {
-        this.sequenceManager = new SequenceManager(configLoader.getSequenceConfig());
-        this.keybindingManager = new KeybindingManager(configLoader.getNormalConfig());
+    public KeyboardLogic(NormalConfig config, SequenceConfig sequence) {
+        this.sequenceManager = new SequenceManager(sequence);
+        this.keybindingManager = new KeybindingManager(config, sequence);
     }
 
     public void handleKeyPress(int keyCode) {

@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 
 public class ConfigLoader {
     private NormalConfig config;
@@ -24,13 +25,19 @@ public class ConfigLoader {
         Gson gson = new Gson();
 
         Path defaultConfigPath = Path.of(configDir + "config.json");
-        Path defaultSequencesPath = Path.of(configDir + "sequences.json");
+        Path path = Path.of(configDir + "sequences.json");
 
         if (!Files.exists(defaultConfigPath)) {
             Files.writeString(defaultConfigPath, gson.toJson(new NormalConfig()));
         }
-        if (!Files.exists(defaultSequencesPath)) {
-            Files.writeString(defaultSequencesPath, gson.toJson(new SequenceConfig()));
+        Path sequencesPath = path;
+        if (!Files.exists(sequencesPath)) {
+            try (InputStream in = getClass().getClassLoader().getResourceAsStream("default-sequences.json")) {
+                if (in == null) {
+                    throw new RuntimeException("Missing resource: default-sequences.json");
+                }
+                Files.copy(in, sequencesPath, StandardCopyOption.REPLACE_EXISTING);
+            }
         }
 
         config = gson.fromJson(
