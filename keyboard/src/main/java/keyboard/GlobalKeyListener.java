@@ -4,7 +4,14 @@ import com.github.kwhat.jnativehook.GlobalScreen;
 import com.github.kwhat.jnativehook.keyboard.NativeKeyEvent;
 import com.github.kwhat.jnativehook.keyboard.NativeKeyListener;
 
+import java.util.List;
+
 public class GlobalKeyListener implements NativeKeyListener {
+    public List<String> lastPressed;
+
+    public List<String> getLastPressed() {
+        return lastPressed;
+    }
 
     public static void main(String[] args) throws Exception {
         System.out.println("starting hook");
@@ -15,9 +22,7 @@ public class GlobalKeyListener implements NativeKeyListener {
 
     @Override
     public void nativeKeyPressed(NativeKeyEvent e) {
-        System.out.println("Pressed: " + NativeKeyEvent.getKeyText(e.getKeyCode()));
-    }
+        lastPressed.add(NativeKeyEvent.getKeyText(e.getKeyChar()));
 
-    @Override public void nativeKeyReleased(NativeKeyEvent e) {}
-    @Override public void nativeKeyTyped(NativeKeyEvent e) {}
+    }
 }

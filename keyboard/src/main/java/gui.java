@@ -1,19 +1,20 @@
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
-
-import javax.swing.BorderFactory;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class gui implements ActionListener {
+
+    int i = 0;
+    JLabel label = new JLabel("Number of clicks: " + i);
 
     public gui(){
         JFrame frame = new JFrame();
 
         JButton button = new JButton("Click me");
-        buutton.addActionListener();
-        JLabel label = new JLabel("Number of clicks: 0");
+        button.addActionListener(this);
 
         JPanel panel = new JPanel(); 
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
@@ -30,5 +31,16 @@ public class gui implements ActionListener {
 
     public static void main(String[] args){
         new gui();
+    }
+
+    /**
+     * Invoked when an action occurs.
+     *
+     * @param e the event to be processed
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        i++;
+        label.setText("Number of clicks: " + i);
     }
 }
