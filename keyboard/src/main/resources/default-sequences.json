@@ -1,8 +1,8 @@
 {
   "sequences": [
     {
-      "sequence": ["UP", "UP"],
-      "run": "/scripts/test.sh"
+      "sequence": ["A"],
+      "run": "~/scripts/test.sh"
     }
   ]
 }

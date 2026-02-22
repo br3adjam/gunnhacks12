@@ -5,29 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51d1d15b-334f-46d9-88e9-43c26985a57b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.form" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/gui/gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/Keyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/ConfigLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/NormalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/NormalConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/SequenceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/config/SequenceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeybindingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeybindingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeyboardLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeyboardLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard/src/main/resources/default-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/resources/default-config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keyboard/src/main/resources/default-sequences.json" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard/src/main/resources/default-sequences.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/home/moth/IdeaProjects/gunnhacks12" value="3A04GuiVOmLarUyfWqRody4reQI" />
+    </persistenceIdMap>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -331,7 +321,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/keyboard/src/main/java/keyboard/logic/KeybindingManager.java</url>
-          <line>37</line>
+          <line>39</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

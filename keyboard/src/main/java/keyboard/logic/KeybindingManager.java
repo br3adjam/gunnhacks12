@@ -27,6 +27,8 @@ public class KeybindingManager {
                 .map(this::keyFromString)
                 .toList();
         sequenceMap.put(key, output);
+        // debug
+        System.out.println("Registered sequence: " + key + " -> " + output);
     }
 
 //    ConfigLoader loader = new ConfigLoader();
@@ -70,7 +72,7 @@ public class KeybindingManager {
         if (comboBuffer.size() > maxComboLength) {
             resetWithError();
         }
-        System.out.println("key: " + keyCode);
+        System.out.println("key: " + keyCode + " buffer: " + comboBuffer);
     }
 
     private void reset() {
@@ -90,10 +92,19 @@ public class KeybindingManager {
     }
 
     public void executeCombo() {
+        System.out.println("Executing combo. buffer=" + comboBuffer + " registeredKeys=" + sequenceMap.keySet());
+
         int size = comboBuffer.size();
         if (size >= 2 && comboBuffer.get(size-1) == keyCodes.get("MOD") && comboBuffer.get(size-2) == keyCodes.get("MOD")) {
             comboBuffer.clear();
             return;
+        }
+
+        // Detailed debug: compare comboBuffer to each registered key
+        int comboHash = comboBuffer.hashCode();
+        System.out.println("comboBuffer.hash=" + comboHash + " comboBuffer.equalsAnyRegistered?");
+        for (List<Integer> registered : sequenceMap.keySet()) {
+            System.out.println(" registered=" + registered + " hash=" + registered.hashCode() + " equals=" + registered.equals(comboBuffer));
         }
 
         if (checkCombo().equals("INVALID")) {
