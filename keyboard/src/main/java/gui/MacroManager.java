@@ -1,6 +1,10 @@
+package gui;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+
+// todo)) nothing hardcoded, pull info from config file, record works, settings work, keybind live-updates when recording, keybinds work, make work
 
 public class MacroManager extends JFrame {
     private CardLayout cardLayout = new CardLayout();
@@ -23,7 +27,7 @@ public class MacroManager extends JFrame {
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
         
         JPanel leftPanel = new JPanel(new BorderLayout());
-        JTextArea sequenceDisplay = new JTextArea("[up symbol]\n[up symbol]\n[a symbol]\n[right symbol]\n[enter]");
+        JTextArea sequenceDisplay = new JTextArea("");
         sequenceDisplay.setEditable(false);
         sequenceDisplay.setBackground(new Color(230, 230, 230));
         leftPanel.add(new JLabel("Current Sequence"), BorderLayout.NORTH);
