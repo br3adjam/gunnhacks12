@@ -1,0 +1,13 @@
+{
+    "name": "Java Desktop Environment",
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    },
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "MacroManager.java"
+            ]
+        }
+    }
+}
