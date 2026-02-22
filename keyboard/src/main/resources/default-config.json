@@ -1,0 +1,15 @@
+{
+  "keys": {
+    "UP": "UP_ARROW",
+    "DOWN": "DOWN_ARROW",
+    "LEFT": "LEFT_ARROW",
+    "RIGHT": "RIGHT_ARROW",
+    "MODIFIER": "PAGE_UP",
+    "END": "PAGE_DOWN",
+    "TOGGLE": "RCTRL"
+  },
+  "enableToggle": true,
+  "minimizeOnClose": true,
+  "playErrorSound": true,
+  "maxComboLength": 8
+}

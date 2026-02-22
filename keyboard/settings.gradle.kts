@@ -1,1 +1,1 @@
-rootProject.name = "keyboard"
+rootProject.name = "src"
