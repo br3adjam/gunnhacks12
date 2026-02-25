@@ -88,14 +88,16 @@ public class KeybindingManager {
     }
 
     public String checkCombo() {
-        return sequenceMap.getOrDefault(comboBuffer, "INVALID");
+        // Use an immutable copy of comboBuffer to avoid any lookup issues with different List implementations
+        List<Integer> key = List.copyOf(comboBuffer);
+        return sequenceMap.getOrDefault(key, "INVALID");
     }
 
     public void executeCombo() {
         System.out.println("Executing combo. buffer=" + comboBuffer + " registeredKeys=" + sequenceMap.keySet());
 
         int size = comboBuffer.size();
-        if (size >= 2 && comboBuffer.get(size-1) == keyCodes.get("MOD") && comboBuffer.get(size-2) == keyCodes.get("MOD")) {
+        if (size >= 2 && comboBuffer.get(size-1).equals(keyCodes.get("MOD")) && comboBuffer.get(size-2).equals(keyCodes.get("MOD"))) {
             comboBuffer.clear();
             return;
         }
